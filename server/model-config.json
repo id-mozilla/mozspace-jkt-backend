@@ -69,5 +69,9 @@
   "Participant": {
     "dataSource": "mongoDB",
     "public": true
+  },
+  "ListOfAttendees": {
+    "dataSource": "mongoDB",
+    "public": true
   }
 }

@@ -77,6 +77,15 @@
       "type": "belongsTo",
       "model": "RoomType",
       "foreignKey": ""
+    },
+    "participants": {
+      "type": "hasMany",
+      "model": "Participant",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      },
+      "through": "ListOfAttendees"
     }
   },
   "acls": [],

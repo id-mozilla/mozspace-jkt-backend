@@ -31,7 +31,17 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "events": {
+      "type": "hasMany",
+      "model": "Event",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      },
+      "through": "ListOfAttendees"
+    }
+  },
   "acls": [],
   "methods": {}
 }
