@@ -1,5 +1,5 @@
 {
-  "name": "LoopbackStarterBoilerplate",
+  "name": "MozSpaceJKT",
   "version": "1.0.0",
   "main": "server/server.js",
   "engines": {
@@ -36,5 +36,5 @@
     "url": ""
   },
   "license": "MIT",
-  "description": "Loopback Starter Boilerplate"
+  "description": "Backend for MozSpaceJKT"
 }
