@@ -1,0 +1,84 @@
+{
+  "name": "Event",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "organizationName": {
+      "type": "string",
+      "required": true
+    },
+    "pic": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "startDateTime": {
+      "type": "date",
+      "required": true
+    },
+    "endDateTime": {
+      "type": "date",
+      "required": true
+    },
+    "isPaid": {
+      "type": "boolean",
+      "required": true
+    },
+    "isProvidingFood": {
+      "type": "boolean",
+      "required": true
+    },
+    "isUsingTable": {
+      "type": "boolean",
+      "required": true
+    },
+    "fbLink": {
+      "type": "string",
+      "required": true
+    },
+    "twitterLink": {
+      "type": "string",
+      "required": true
+    },
+    "instagramLink": {
+      "type": "string",
+      "required": true
+    },
+    "additionalInformation": {
+      "type": "string",
+      "required": false
+    },
+    "numberOfAttendes": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "roomType": {
+      "type": "belongsTo",
+      "model": "RoomType",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

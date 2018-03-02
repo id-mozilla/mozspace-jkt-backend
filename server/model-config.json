@@ -1,0 +1,69 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../node_modules/loopback-ds-timestamp-mixin",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "AccessToken": {
+    "dataSource": "mongoDB",
+    "public": false,
+    "relations": {
+      "user": {
+        "type": "belongsTo",
+        "model": "user",
+        "foreignKey": "userId"
+      }
+    }
+  },
+  "ACL": {
+    "dataSource": "mongoDB",
+    "public": true
+  },
+  "RoleMapping": {
+    "dataSource": "mongoDB",
+    "public": true,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "mongoDB",
+    "public": true
+  },
+  "user": {
+    "dataSource": "mongoDB",
+    "public": true,
+    "relations": {
+      "accessTokens": {
+        "type": "hasMany",
+        "model": "AccessToken",
+        "foreignKey": "userId",
+        "options": {
+          "disableInclude": true
+        }
+      }
+    }
+  },
+  "Profile": {
+    "dataSource": "mongoDB",
+    "public": true
+  },
+  "Event": {
+    "dataSource": "mongoDB",
+    "public": true
+  },
+  "RoomType": {
+    "dataSource": "mongoDB",
+    "public": true
+  }
+}
