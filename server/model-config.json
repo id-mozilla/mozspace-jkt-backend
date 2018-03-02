@@ -65,5 +65,9 @@
   "RoomType": {
     "dataSource": "mongoDB",
     "public": true
+  },
+  "Participant": {
+    "dataSource": "mongoDB",
+    "public": true
   }
 }
