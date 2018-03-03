@@ -27,7 +27,12 @@
       "required": true
     },
     "yearOfBirth": {
-      "type": "number"
+      "type": "number",
+      "required": false
+    },
+    "isDeveloper": {
+      "type": "boolean",
+      "required": false
     }
   },
   "validations": [],
