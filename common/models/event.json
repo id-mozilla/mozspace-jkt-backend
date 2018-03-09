@@ -52,15 +52,15 @@
     },
     "fbLink": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "twitterLink": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "instagramLink": {
       "type": "string",
-      "required": true
+      "required": false 
     },
     "additionalInformation": {
       "type": "string",
