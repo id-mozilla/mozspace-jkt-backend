@@ -37,6 +37,10 @@
     "facebookLink": {
       "type": "string",
       "required": false
+    },
+    "website": {
+      "type": "string",
+      "required": false
     }
   },
   "validations": [],
