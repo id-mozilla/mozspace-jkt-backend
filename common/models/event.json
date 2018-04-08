@@ -17,14 +17,6 @@
       "type": "string",
       "required": true
     },
-    "organizationName": {
-      "type": "string",
-      "required": true
-    },
-    "pic": {
-      "type": "string",
-      "required": true
-    },
     "phone": {
       "type": "string",
       "required": true
@@ -52,18 +44,6 @@
     "isUsingTable": {
       "type": "boolean",
       "required": true
-    },
-    "fbLink": {
-      "type": "string",
-      "required": false
-    },
-    "twitterLink": {
-      "type": "string",
-      "required": false
-    },
-    "instagramLink": {
-      "type": "string",
-      "required": false 
     },
     "additionalInformation": {
       "type": "string",
