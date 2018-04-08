@@ -69,6 +69,15 @@
         "nestRemoting": true
       },
       "through": "ListOfAttendees"
+    },
+    "organization": {
+      "type": "belongsTo",
+      "model": "Organization",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true,
+        "disableInclude": true
+      }
     }
   },
   "acls": [],

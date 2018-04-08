@@ -73,5 +73,9 @@
   "ListOfAttendees": {
     "dataSource": "mongoDB",
     "public": true
+  },
+  "Organization": {
+    "dataSource": "mongoDB",
+    "public": true
   }
 }
