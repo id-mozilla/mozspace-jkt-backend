@@ -2,7 +2,7 @@
 
 module.exports = {
   users: [
-    {email: 'diky@dikyarga.com', password: 'secret'},
-    {email: 'arga@dikyarga.com', password: 'secret'}
+    {email: 'hello@dikyarga.com', password: 'rahasia'},
+    {email: 'blog@dikyarga.com', password: 'rahasia'}
   ]
 }
