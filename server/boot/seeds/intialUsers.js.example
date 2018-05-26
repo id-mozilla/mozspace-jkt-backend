@@ -1,0 +1,8 @@
+'use strict';
+
+module.exports = {
+  users: [
+    {email: 'diky@dikyarga.com', password: 'secret'},
+    {email: 'arga@dikyarga.com', password: 'secret'}
+  ]
+}

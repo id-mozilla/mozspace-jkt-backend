@@ -1,14 +1,12 @@
 'use strict';
+var intialUsers = require('./seeds/intialUsers');
 
 module.exports = function(server) {
   var User = server.models.user;
   var Role = server.models.Role;
   var RoleMapping = server.models.RoleMapping;
 
-  var users = [
-    {email: 'diky@dikyarga.com', password: 'secret'},
-    {email: 'arga@dikyarga.com', password: 'secret'}
-  ];
+  var users = intialUsers.users;
 
   let roles = [{
     name: 'admin',
@@ -31,6 +29,20 @@ module.exports = function(server) {
       });
     }
   });
+
+  User.findOne({
+    where: {
+      email: users[0].email,
+    }
+  }).then(user => {
+    if (!user) {
+      User.create(users, function(err, roles) {
+        if (err) {
+          console.log('error when seeding user') 
+        }
+      }) 
+    }
+  })
 
   RoleMapping.belongsTo(User);
   User.hasMany(RoleMapping, {foreignKey: 'principalId'});
