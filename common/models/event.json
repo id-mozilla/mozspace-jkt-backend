@@ -70,6 +70,14 @@
         "nestRemoting": true,
         "disableInclude": true
       }
+    },
+    "eventType": {
+      "type": "belongsTo",
+      "model": "EventType",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
     }
   },
   "acls": [],

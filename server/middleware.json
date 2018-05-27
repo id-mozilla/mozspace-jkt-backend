@@ -41,11 +41,12 @@
     }
   },
   "files": {
-    "loopback#static": [{
-      "name": "client",
-      "paths": ["/client"],
+    "loopback#static": {
+      "paths": [
+        "/client"
+      ],
       "params": "$!../client"
-    }]
+    }
   },
   "final": {
     "loopback#urlNotFound": {}
