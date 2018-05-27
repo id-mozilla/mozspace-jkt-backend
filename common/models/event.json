@@ -44,6 +44,10 @@
     "numberOfAttendees": {
       "type": "number",
       "required": true
+    },
+    "duration": {
+      "type": "number",
+      "required": true
     }
   },
   "validations": [],
