@@ -75,8 +75,7 @@
       "model": "Organization",
       "foreignKey": "",
       "options": {
-        "nestRemoting": true,
-        "disableInclude": true
+        "nestRemoting": true
       }
     },
     "eventType": {
