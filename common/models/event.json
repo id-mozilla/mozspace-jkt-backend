@@ -48,6 +48,10 @@
     "duration": {
       "type": "number",
       "required": true
+    },
+    "confirmed": {
+      "type": "boolean",
+      "required": true
     }
   },
   "validations": [],
