@@ -281,4 +281,31 @@ module.exports = function(User) {
     description: "Just trying to create remoteMethod"
   })
 
+  User.me = function(req, param, cb) {
+    var userId = req.accessToken.userId;
+
+    User.findById(userId, {
+      include: ['roles'],
+    }).then(user => {
+      cb(null, user);
+    }).catch(err => {
+      cb(new Error(err))
+    });
+  };
+
+  User.remoteMethod(
+    'me',
+    {
+      accepts: [
+        {arg: 'req', type: 'object', http: {source: 'req'}}, // <----
+        {arg: 'param', type: 'string', required: true},
+      ],
+      returns: [
+        {arg: 'user', type: 'object'},
+        {arg: 'scope', type: 'array'},
+      ],
+      description: 'getting information about me from the accessToken',
+    }
+  );
+
 };
