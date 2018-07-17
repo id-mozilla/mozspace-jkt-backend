@@ -287,7 +287,9 @@ module.exports = function(User) {
     User.findById(userId, {
       include: ['roles'],
     }).then(user => {
-      cb(null, user);
+      let userDetailObj = JSON.parse(JSON.stringify(user))
+      const scope = userDetailObj.roles.map(role => role.name);
+      cb(null, userDetailObj, scope);
     }).catch(err => {
       cb(new Error(err))
     });
