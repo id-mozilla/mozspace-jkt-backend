@@ -64,6 +64,10 @@
     "isDeveloperEvent": {
       "type": "boolean",
       "required": false
+    },
+    "registrationLink": {
+      "type": "string",
+      "required": false
     }
   },
   "validations": [],
