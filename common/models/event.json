@@ -60,6 +60,10 @@
     "isPrivate": {
       "type": "boolean",
       "required": true
+    },
+    "isDeveloperEvent": {
+      "type": "boolean",
+      "required": false
     }
   },
   "validations": [],
