@@ -56,6 +56,10 @@
     "slug": {
       "type": "string",
       "required": true
+    },
+    "isPrivate": {
+      "type": "boolean",
+      "required": true
     }
   },
   "validations": [],
