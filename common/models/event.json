@@ -52,6 +52,10 @@
     "confirmed": {
       "type": "boolean",
       "required": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true
     }
   },
   "validations": [],
