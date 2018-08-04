@@ -23,7 +23,9 @@
     "loopback-component-explorer": "^4.0.0",
     "loopback-connector-mongodb": "^1.18.1",
     "loopback-ds-timestamp-mixin": "^3.4.1",
+    "nanoid": "^1.1.0",
     "serve-favicon": "^2.0.1",
+    "slug": "^0.9.1",
     "socket.io": "^2.1.0",
     "strong-error-handler": "^2.3.2"
   },
