@@ -7,7 +7,7 @@
     "host": "localhost",
     "port": 27017,
     "url": "",
-    "database": "i-trust-u",
+    "database": "database-name",
     "password": "",
     "name": "mongoDB",
     "user": "",
