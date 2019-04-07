@@ -10,15 +10,15 @@ module.exports = function(Event) {
   Event.observe('before save', (ctx, next) => {
     if (ctx.instance) {
       const randomId = generate('abcdefghijklmnopqrstuvwxyz', 3);
-      ctx.instance.slug = slug(`${ctx.instance.title}-${randomId}`);
+      ctx.instance.slug = slug(`${ctx.instance.title}-${randomId}`,{lower: true});
     }
     next();
   });
 
   //event call telegram
-  Event.observe('after save', (ctx, next) => { 
-      console.log('tes');
-  });
+  //Event.observe('after save', (ctx, next) => { 
+  //    console.log('tes');
+  //});
 
   Event.report = function (eventId, cb) {
     Event.findById(eventId, {
