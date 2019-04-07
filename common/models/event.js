@@ -1,9 +1,10 @@
 'use strict';
 const slug = require('slug');
 var generate = require('nanoid/generate')
+//module telegram
+var tele = require('../telegram/tele');
 
 const sortByNewest = function(a, b) { return a < b }
-
 
 module.exports = function(Event) {
   Event.observe('before save', (ctx, next) => {
@@ -12,6 +13,11 @@ module.exports = function(Event) {
       ctx.instance.slug = slug(`${ctx.instance.title}-${randomId}`);
     }
     next();
+  });
+
+  //event call telegram
+  Event.observe('after save', (ctx, next) => { 
+      console.log('tes');
   });
 
   Event.report = function (eventId, cb) {
