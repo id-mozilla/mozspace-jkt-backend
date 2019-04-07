@@ -19,9 +19,9 @@ Untuk membuild docker images:
 
 Pastikan tidak ada erorr saat build images, setelah itu jalankan perintah dibawah ini untuk menjalankan aplikasi anda.
 
-- `$ docker run -p 3000:4000 -d <username>/mozspace-jkt-backend`
+- `$ docker run -p 4000:4000 -d <username>/mozspace-jkt-backend`
 
-Server API Anda akan berjalan pada alamat berikut `http://localhost:3000`, silahkan menuju alamat `http://localhost:3000/explorer/` untuk membaca dokumentasi API.
+Server API Anda akan berjalan pada alamat berikut `http://localhost:4000`, silahkan menuju alamat `http://localhost:4000/explorer/` untuk membaca dokumentasi API.
 
 Untuk menghentikan container aplikasi Anda, silahkan ketik perintah berikut :
 
