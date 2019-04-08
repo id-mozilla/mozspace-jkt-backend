@@ -1,7 +1,6 @@
 'use strict';
 const slug = require('slug');
 var generate = require('nanoid/generate')
-//module telegram
 var tele = require('../telegram/tele');
 
 const sortByNewest = function(a, b) { return a < b }
@@ -15,10 +14,12 @@ module.exports = function(Event) {
     next();
   });
 
-  //event call telegram
-  //Event.observe('after save', (ctx, next) => { 
-  //    console.log('tes');
-  //});
+  //event send msg to telegram
+  Event.observe('after save', (ctx, next) => {
+    let eTitle = ctx.instance.title;
+    tele.teleBot(eTitle); //need link registrasi field currently using event title
+    next();
+  });
 
   Event.report = function (eventId, cb) {
     Event.findById(eventId, {
