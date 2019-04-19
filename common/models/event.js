@@ -1,16 +1,23 @@
 'use strict';
 const slug = require('slug');
 var generate = require('nanoid/generate')
+var tele = require('../telegram/tele');
 
 const sortByNewest = function(a, b) { return a < b }
-
 
 module.exports = function(Event) {
   Event.observe('before save', (ctx, next) => {
     if (ctx.instance) {
       const randomId = generate('abcdefghijklmnopqrstuvwxyz', 3);
-      ctx.instance.slug = slug(`${ctx.instance.title}-${randomId}`);
+      ctx.instance.slug = slug(`${ctx.instance.title}-${randomId}`,{lower: true});
     }
+    next();
+  });
+
+  //event send msg to telegram
+  Event.observe('after save', (ctx, next) => {
+    let eTitle = ctx.instance.title;
+    tele.teleBot(eTitle); //need link registrasi field currently using event title
     next();
   });
 
