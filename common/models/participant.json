@@ -27,7 +27,7 @@
     },
     "phone": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "yearOfBirth": {
       "type": "number",
