@@ -1,3 +1,4 @@
+// cofig file development
 module.exports = {
   restApiRoot: "/api",
   host: "0.0.0.0",
