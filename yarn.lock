@@ -1930,10 +1930,10 @@ loopback-connector@^4.4.0:
     strong-globalize "^4.1.1"
     uuid "^3.0.1"
 
-loopback-datasource-juggler@^3.0.0, loopback-datasource-juggler@^3.28.0:
-  version "3.28.1"
-  resolved "https://registry.yarnpkg.com/loopback-datasource-juggler/-/loopback-datasource-juggler-3.28.1.tgz#e53c078268d4fe1bfb8761fc3bf6d16410071261"
-  integrity sha512-jzAHS5ZooDXjVX88nkRVIqhVvzX74A3FAJuVnbu/6xo+58Pcec5BqOmZWVymSFtUGrAFz2d4r5Jwrd25qIW+fg==
+loopback-datasource-juggler@^3.0.0, loopback-datasource-juggler@^3.18.0:
+  version "3.35.0"
+  resolved "https://registry.yarnpkg.com/loopback-datasource-juggler/-/loopback-datasource-juggler-3.35.0.tgz#769b22ed412e234d74a66a034c1dc5c488070d19"
+  integrity sha512-Z4lxBxhNHJTro4M4tZgOrpi9/tmHyMsmquuKIFsgKJwQ3R7Zb6rMoaQ+VZoxmyFW+xLexVEM/tShOQbRjb8HVQ==
   dependencies:
     async "^2.6.0"
     bluebird "^3.1.1"
@@ -1989,10 +1989,10 @@ loopback-swagger@^3.0.1:
     strong-globalize "^2.6.0"
     underscore.string "~2.3.3"
 
-loopback@^3.18.3:
-  version "3.25.1"
-  resolved "https://registry.yarnpkg.com/loopback/-/loopback-3.25.1.tgz#651af40e6626a49216885364d4812b1f3cab9020"
-  integrity sha512-JIl3e9FI7uU5p47rpV+Bv5JQTVaIhzUngp7GqGz4aKJ1Qwgmp3xfFTGkMdhgG2I8pbXIhoR2kPUkFF/yD/6WcA==
+loopback@^3.22.0:
+  version "3.22.0"
+  resolved "https://registry.yarnpkg.com/loopback/-/loopback-3.22.0.tgz#30c49ccc52d6a9194406c410e7987b3ba4a30f82"
+  integrity sha512-DbKPKD8dI1YuGS6oPN9zuK6XTVy5Gxx+StQgAEloTEbdJbZSEzQg4/6jaoJPETiM1RlKgsmk7KOLTkF7tPEZLA==
   dependencies:
     async "^2.0.1"
     bcryptjs "^2.1.0"
@@ -2006,7 +2006,7 @@ loopback@^3.18.3:
     inflection "^1.6.0"
     isemail "^2.2.1"
     loopback-connector-remote "^3.0.0"
-    loopback-datasource-juggler "^3.28.0"
+    loopback-datasource-juggler "^3.18.0"
     loopback-filters "^1.0.0"
     loopback-phase "^3.0.0"
     nodemailer "^4.0.1"
@@ -2017,7 +2017,7 @@ loopback@^3.18.3:
     strong-globalize "^4.1.1"
     strong-remoting "^3.11.0"
     uid2 "0.0.3"
-    underscore.string "^3.3.5"
+    underscore.string "^3.0.3"
 
 lru-cache@^4.0.1:
   version "4.1.5"
@@ -3262,7 +3262,7 @@ uid2@0.0.3:
   resolved "https://registry.yarnpkg.com/uid2/-/uid2-0.0.3.tgz#483126e11774df2f71b8b639dcd799c376162b82"
   integrity sha1-SDEm4Rd03y9xuLY53NeZw3YWK4I=
 
-underscore.string@^3.3.5:
+underscore.string@^3.0.3:
   version "3.3.5"
   resolved "https://registry.yarnpkg.com/underscore.string/-/underscore.string-3.3.5.tgz#fc2ad255b8bd309e239cbc5816fd23a9b7ea4023"
   integrity sha512-g+dpmgn+XBneLmXXo+sGlW5xQEt4ErkS3mgeN2GFbremYeMBSJKr9Wf2KJplQVaiPY/f7FN6atosWYNm9ovrYg==
