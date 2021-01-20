@@ -26,7 +26,7 @@
     "nanoid": "^1.1.0",
     "serve-favicon": "^2.0.1",
     "slug": "^0.9.1",
-    "socket.io": "^2.1.0",
+    "socket.io": "^2.4.0",
     "strong-error-handler": "^2.3.2"
   },
   "devDependencies": {
